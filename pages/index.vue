@@ -1,3 +1,3 @@
 <template>
-    <h1>ini halaman index/home</h1>
+    <h1>HALAMAN HOME</h1>
 </template>
