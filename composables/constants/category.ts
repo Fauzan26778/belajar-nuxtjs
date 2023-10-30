@@ -9,11 +9,19 @@ export const category: Category[] = [
     },
     {
     id: 3,
-    name: "Celana",
+    name: "Jam",
     },
     {
     id: 4,
-    name: "Jam",
+    name: "Alat Tulis",
+    },
+    {
+     id: 5,
+    name: "Jaket",
+     },
+     {
+    id: 6,
+    name: "Celana",
     },
    ]
    export interface Category {
