@@ -8,7 +8,7 @@ const props = defineProps({
 </script>
 
 <template>
-    <div class="bg-white shadow-xl p-6 rounded-xl flex gap-4 items-center">
+    <div class="bg-black shadow-xl p-6 rounded-xl flex gap-4 items-center">
     <div class="h-[150px] w-[130px] bg-gray-300 rounded-xl p-3">
     <img :src="props.product.image" class="h-full w-full object-contain" />
     </div>
@@ -23,12 +23,20 @@ const props = defineProps({
     </div>
 
     
-    <div class="flex items-center gap-2 border border-gray-300 px-3 py-2 rounded-full cursor-pointer" @click="$emit('removeCart', props.product.id)">
-<i class="ri-delete-bin-7-fill text-sm text-gray-600"></i>
-<span class="text-sm text-gray-500">Delete</span>
+    <div class="flex items-center gap-2 border border-red-300 px-3 py-2 rounded-full cursor-pointer " @click="$emit('removeCart', props.product.id)">
+<i class="ri-delete-bin-7-fill text-sm text-gray-600 "></i>
+<span class="text-sm text-gray-500 ">Delete</span>
 </div>
 
     </div>
     </div>
     </div>
    </template>
+
+<style >
+body{
+    background-color: black;
+    color: rgb(0, 255, 4);
+    border: 2px solid green;
+}
+</style>

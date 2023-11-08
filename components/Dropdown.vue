@@ -12,9 +12,9 @@ rounded-lg gap-4 cursor-pointer w-full" @click="isShow = !isShow">
 duration-300 ${isShow ? 'rotate-180' : 'rotate-0'}`"></i>
  </div>
  <!-- Dropdown menu -->
- <div v-show="isShow" class="z-10 bg-white divide-y divide-gray-100 rounded-lg 
-shadow-xl w-full absolute top-14">
- <ul class="py-2 text-sm text-gray-700">
+ <div v-show="isShow" class="z-10 bg-black divide-y divide-green-100 rounded-lg 
+shadow-xl w-full absolute top-14 border-b border-l border-r border-slate-200 ">
+ <ul class="py-2 text-sm text-green-700 font-bold">
  <li>
  <span class="block px-4 py-2 hover:bg-primary hover:text-white 
 transition duration-200 cursor-pointer" @click="$emit('selectedCategory', 
@@ -29,3 +29,9 @@ item.name)">{{ item?.name }}</span>
  </div>
  </div>
 </template>
+<style >
+body{
+    background-color: black;
+    color: rgb(0, 255, 4);
+}
+</style>

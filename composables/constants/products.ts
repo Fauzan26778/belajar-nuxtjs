@@ -9,7 +9,7 @@ export const products = [
       description: "Baju sablon karakter anime khas Jepang. baju lengan pendek dengan warna yang tersedia dan bervariasi. Desain yang tersedia,Terpopuler yaitu karakter Anime OnePiece,Naruto,JujutsuKaisen dan masih banyak lagi",
     },
     {
-      id: 2,
+      id: 4,
       name: "Pensil Kayu FaberCastell 2B ,1 package",
       category: "Alat Tulis",
       price: 1,
@@ -18,7 +18,7 @@ export const products = [
       description: "Pensil Kayu Faber Castell 2B, 1 package 8 pieces. Pensil kayu kualitas sempurna dengan warna hitam pekat cocok untuk kebutuhan sekolah",
     },
     {
-      id: 3,
+      id: 1,
       name: "Baju Sablon Khas Programmer Pria L/XL",
       category: "Baju",
       price: 28,
@@ -36,7 +36,7 @@ export const products = [
       description: "Pulpen Sekolah dengan merk AE7.Pembelian 1 package yang berisi 6 pieces. Cocok dipakai untuk menulis dan menggambar, tersedia dengan 3 warna berbeda (hitam, biru, merah)",
     },
     {
-      id: 5,
+      id: 2,
       name: "Formal School Socks",
       category: "Sepatu",
       price: 2,
@@ -45,7 +45,7 @@ export const products = [
       description: "Kaos Kaki formal untuk anak sekolah, warna putih dan bawahan hitam",
     },
     {
-      id: 6,
+      id: 1,
       name: "Kaos/Baju Polos L/XL",
       category: "Baju",
       price: 10,
@@ -54,3 +54,5 @@ export const products = [
       description: "Kaos/baju polos cocok untuk pria dan wanita. kaos/baju polos dengan ukuran L & XL, ukuran remaja dan warna yang bervariasai, mulai dari hitam, putih dan banyak lagi. bahan lembut dan sejuk cocok pula dipakai untuk bersantai",
     },
   ];
+
+  

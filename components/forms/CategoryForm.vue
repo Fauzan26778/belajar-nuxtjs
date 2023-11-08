@@ -31,10 +31,18 @@ border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500
 focus:border-blue-500 block w-full p-2.5" placeholder="Masukan Nama Category" 
 required="true">
  </div>
- <button type="submit" class="text-white bg-primary hover:bg-primary/80 
+ <button type="submit" class="text-green bg-green hover:bg-green/80 
 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg 
 text-sm w-full sm:w-auto px-5 py-2.5 text-center">Submit</button>
  </form>
  </div> 
  </section>
 </template>
+
+<style >
+body{
+    background-color: black;
+    color: rgb(0, 255, 0);
+    border: 2px solid green;
+}
+</style>

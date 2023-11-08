@@ -11,3 +11,10 @@ const product = ref(products.find((item: Products) => item.id === id));
 <template>
  <DetailProduct :product="product"/>
 </template>
+
+<style >
+body{
+    background-color: black;
+    color: rgb(0, 255, 4);
+}
+</style>

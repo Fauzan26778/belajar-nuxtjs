@@ -30,7 +30,7 @@ oneProduct.value.id);
 
 
 <template>
-    <section class="bg-white shadow-xl rounded-xl overflow-hidden">
+    <section class="bg-black shadow-xl rounded-xl overflow-hidden border border-slate-200 ">
     <div :class="`w-full h-[200px] p-5 bg-gray-300`">
     <img :src="oneProduct.image" class="w-full h-full object-contain"/>
     </div>
@@ -41,10 +41,18 @@ oneProduct.value.id);
     <span class="text-sm font-normal">${{ oneProduct.price }}</span>
     </div>
     <div :class="`cursor-pointer absolute -top-5 right-7 w-[50px] h-[50px]
-   ${oneProduct.isCart ? 'bg-blue-600 text-white' : 'bg-white'} shadow-xl 
-   rounded-full flex justify-center items-center hover:bg-blue-600 hover:text-white transition duration-300`" @click="addCart">
+   ${oneProduct.isCart ? 'bg-green-600 text-black' : 'bg-black'} shadow-xl 
+   rounded-full flex justify-center items-center hover:bg-green-600 hover:text-white transition duration-300`" @click="addCart">
     <i class="ri-shopping-cart-2-line"></i>
     </div>
     </div>
     </section>
    </template>
+
+<style >
+body{
+    background-color: black;
+    color: rgb(0, 255, 0);
+    border: 2px solid green;
+}
+</style>

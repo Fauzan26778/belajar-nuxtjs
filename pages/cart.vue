@@ -26,7 +26,7 @@ onMounted(() => {
  <div class="container">
  <div class="py-10 flex gap-6">
     <div class="w-[70%]">
-<div class="flex justify-between items-center pb-7 border-b border-gray-300 mb-6">
+<div class="flex justify-between items-center pb-7 border-b border-green-300 mb-6">
 <h1 class="text-3xl font-medium">Shopping Cart</h1>
 <p class="text-3xl font-medium">{{ products.length }} Items</p>
 </div>
@@ -42,7 +42,7 @@ onMounted(() => {
 </div>
 </div>
 
- <div class="w-[30%] bg-white shadow-xl h-max p-6">
+ <div class="w-[30%] bg-black shadow-xl h-max p-6">
 <h3 class="text-xl font-medium mb-6">Order Summary</h3>
 <div class="flex flex-col gap-3 border-b border-gray-300 pb-4">
 <div v-if="products.length > 0">
@@ -62,7 +62,7 @@ orders yet</p>
 <span class="text-base">Total</span>
 <span class="text-base font-bold">${{ totalPrice }}</span>
 </div>
-<button class="bg-blue-600 text-white text-base font-bold w-full py-2 
+<button class="bg-green-600 text-black text-base font-bold w-full py-2 
 rounded-lg">Checkout</button>
 </div>
  </div>

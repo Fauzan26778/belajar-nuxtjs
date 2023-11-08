@@ -13,7 +13,7 @@ const allProducts = computed(() => {
  <div class="container">
  <div class="py-10">
  <div class="mb-6 flex justify-end gap-6">
-    <NuxtLink to="/category/create" class="bg-orange-500 text-white flex justify-center items-center px-3 rounded-lg">
+    <NuxtLink to="/category/create" class="text-bold bg-green-500 text-black flex justify-center items-center px-3 rounded-lg">
         Create Category
     </NuxtLink>
  <Dropdown @selected-category="selectedCategory = $event" />
@@ -27,3 +27,11 @@ const allProducts = computed(() => {
  </div>
  </section>
 </template>
+
+<style >
+body{
+    background-color: black;
+    color: rgb(0, 255, 4);
+    border: 2px solid rgb(1, 249, 1);
+}
+</style>
