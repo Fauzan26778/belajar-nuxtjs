@@ -3,7 +3,7 @@
         <div class="container">     
             <div class="flex justify-between items-center">
                 <div >
-                    <NuxtLink to="/" class="text-xl font-bold">FauJinan  [SMK CODING]</NuxtLink>                   
+                    <NuxtLink to="/" class="text-xl font-bold">SMK CODING</NuxtLink>                   
                 </div>   
                 <nav class="flex items-center gap-6 font-bold">
             <NuxtLink to="/" class="text-base tc-red">HOME</NuxtLink>
