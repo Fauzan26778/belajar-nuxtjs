@@ -1,13 +1,13 @@
 <script lang="ts" setup>
-import { products } from '~/composables/constants/products';
-const selectedCategory = ref("");
-const allProducts = computed(() => {
- if (selectedCategory.value) {
- return products.filter((item) => item.category === selectedCategory.value);
- }
- return products;
+import { useProductsStore } from "~/stores/products";
+const productStore = useProductsStore();
+const allProducts = ref([]);
+productStore.getAllProducts().then(() => {
+ allProducts.value = productStore.products;
 });
+const selectedCategory = ref("");
 </script>
+
 <template>
  <section>
  <div class="container">
@@ -16,6 +16,8 @@ const allProducts = computed(() => {
     <NuxtLink to="/category/create" class="text-bold bg-green-500 text-black flex justify-center items-center px-3 rounded-lg">
         Create Category
     </NuxtLink>
+    <NuxtLink to="/product/create" class="bg-green-500 text-black flex justify-center
+items-center px-3 rounded-lg">Create Products</NuxtLink>
  <Dropdown @selected-category="selectedCategory = $event" />
  </div>
  <div class="flex gap-6 flex-wrap mx-auto">
