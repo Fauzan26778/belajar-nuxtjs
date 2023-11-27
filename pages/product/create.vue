@@ -78,7 +78,7 @@ const uploadFile = async (formFile: any) => {
 <template>
   <section class="flex justify-center py-10">
     <div class="w-[500px]">
-      <h1 class="text-2xl mb-7 font-medium">Create Products</h1>
+      <h1 class="text-2xl mb-7 font-bold">Create Products</h1>
       <div v-if="isShowAlert" :class="`p-4 mb-4 text-sm rounded-lg ${isSuccess ? 'bg-green-100 text-green-800' : 'text-red-800 bg-red-100'}`" role="alert">
         {{ message }}
       </div>
@@ -86,14 +86,14 @@ const uploadFile = async (formFile: any) => {
         <div class="mb-6" v-for="(item, index) in formCreateProduct" :key="index">
           <label
             :for="item.name"
-            class="block mb-2 text-sm font-medium text-green-900"
+            class="block mb-2 text-sm font-bold text-green-900"
           >
             {{ item.label }}
           </label>
           <select
             v-if="item.type === 'select'"
             :id="item.name"
-            class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+            class="bg-gray-50 border border-gray-300 text-green-900 text-sm rounded-lg focus:ring-green-500 focus:border-green-500 block w-full p-2.5"
             v-model="item.value"
           >
             <option disabled value="">Choose Category</option>
@@ -104,7 +104,7 @@ const uploadFile = async (formFile: any) => {
             :type="item.type"
             :id="item.name"
             @change="item.value = $event"
-            class="w-full text-sm text-green-900 border border-green-300 rounded-lg cursor-pointer bg-green-50 focus:outline-none file:bg-primary file:border-none file:px-3 file:py-2 file:text-white file:mr-3"
+            class="w-full text-sm text-white bg-black-600 border border-green-300 hover:bg-green-700 rounded-lg cursor-pointer bg-black-50 focus:outline-none file:bg-primary file:border-none file:px-3 file:py-2 file:text-white file:mr-3"
             :required="item.required"
           >
           <input
@@ -112,12 +112,12 @@ const uploadFile = async (formFile: any) => {
             :type="item.type"
             :id="item.name"
             v-model="item.value"
-            class="bg-gray-50 border border-gray-300 text-green-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+            class="text-gold bg-black-600 border border-green-300 hover:bg-green-700 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
             :placeholder="item.placeholder"
             :required="item.required"
           >
         </div>
-        <button type="submit" class="text-black bg-white hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">
+        <button type="submit" class="text-green bg-primary hover:bg-green-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center">
           <span v-if="!isLoading">Submit</span>
           <div v-else class="flex items-center gap-3">
               <div class="w-5 h-5 rounded-full border-2 border-t-blue-500 animate-spin"></div>
@@ -128,9 +128,3 @@ const uploadFile = async (formFile: any) => {
     </div>    
   </section>
 </template>
-
-<style >
-  body{
-    color: green;
-  }
-</style>

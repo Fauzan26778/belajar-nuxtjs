@@ -8,9 +8,9 @@ export interface Products {
     isCart?: boolean,
     description?: string,
     quantity?: number,
-}
-
-export interface FormField {
+  }
+  
+  export interface FormField {
     id?: string;
     name?: string;
     label?: string;
@@ -19,5 +19,4 @@ export interface FormField {
     placeholder?: string;
     checked?: boolean;
     required?: boolean;
-   }
-   
+  }
